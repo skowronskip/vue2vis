@@ -58,9 +58,8 @@ export default {
     options: {
       deep: true,
       handler(v) {
-          console.log('edited by Pawel');
           this.timeline.setOptions(v);
-          this.timeline.zoomOut(1);
+          this.timeline.zoomOut(100);
       }
     },
     selection: {
