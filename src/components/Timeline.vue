@@ -59,7 +59,7 @@ export default {
       deep: true,
       handler(v) {
           this.timeline.setOptions(v);
-          this.timeline.zoomOut(1);
+          this.timeline.fit();
       }
     },
     selection: {
