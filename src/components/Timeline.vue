@@ -59,7 +59,8 @@ export default {
       deep: true,
       handler(v) {
           this.timeline.setOptions(v);
-          this.timeline.fit();
+          console.log(v.min, v.max);
+          this.timeline.setWindow(v.min, v.max);
       }
     },
     selection: {
